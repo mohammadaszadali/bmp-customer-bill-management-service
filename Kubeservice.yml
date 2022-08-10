@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bmp-customer-bill-management-service-svc
+  namespace: dtag-dev
+  labels:
+    app: bmp-customer-bill-management-service
+    version: latest
+spec:
+  type: NodePort
+  externalTrafficPolicy: Cluster
+  ports:
+  - port: 18926
+    nodePort: 31926
+    targetPort: 2126
+    protocol: TCP
+  selector:
+    app: bmp-customer-bill-management-service
+    version: latest

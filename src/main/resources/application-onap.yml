@@ -1,0 +1,8 @@
+server:
+    port: 2126
+spring:
+    data:
+        mongodb:
+            database: BMP_CUSTOMER_Bill_1
+            host: 10.0.5.36
+            port: 27017
