@@ -4,5 +4,5 @@ spring:
     data:
         mongodb:
             database: BMP_CUSTOMER_Bill_1
-            host: 10.0.5.36
+            host: 18.206.88.157
             port: 27017
